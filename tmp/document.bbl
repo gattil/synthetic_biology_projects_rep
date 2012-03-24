@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cherry and Adler(2000)]{CHERRY2000117}
+Joshua~L Cherry and Frederick~R Adler.
+\newblock How to make a biological switch.
+\newblock \emph{Journal of Theoretical Biology}, 203\penalty0 (2):\penalty0 117
+  -- 133, 2000.
+\newblock ISSN 0022-5193.
+\newblock \doi{10.1006/jtbi.2000.1068}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0022519300910683}.
+
+\end{thebibliography}
