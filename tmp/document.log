@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.3.10)  24 MAR 2012 18:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.3.10)  24 MAR 2012 18:42
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1041,9 +1041,9 @@ Package: ETHlogo 2000/11/06 0.1 ETH Logo command
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 598pt by 341pt
-Spine and edge margins: 102.26999pt and 154.23788pt
-Upper and lower margins: 125.33748pt and 121.70937pt
+Text height and width: 622pt by 433pt
+Spine and edge margins: 81.94394pt and 81.94394pt
+Upper and lower margins: 125.33748pt and 97.70937pt
 Headheight and headsep: 12pt and 18.06749pt
 Footskip: 25.29494pt
 Columnsep and columnseprule: 10pt and 0pt
@@ -1520,12 +1520,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 [1
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ETHlo
-go.pdf>] <./images/plot_B1.pdf, id=79, 487.03041pt x 390.29604pt>
+go.pdf>] <./images/plot_B1.pdf, id=80, 487.03041pt x 390.29604pt>
 File: ./images/plot_B1.pdf Graphic file (type pdf)
 
 <use ./images/plot_B1.pdf>
 Package pdftex.def Info: ./images/plot_B1.pdf used on input line 52.
-(pdftex.def)             Requested size: 119.3495pt x 187.55435pt.
+(pdftex.def)             Requested size: 151.55008pt x 238.15765pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 52.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1535,21 +1535,21 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 52.
 
-<./images/plot_B2.pdf, id=80, 486.35866pt x 390.29616pt>
+<./images/plot_B2.pdf, id=81, 486.35866pt x 390.29616pt>
 File: ./images/plot_B2.pdf Graphic file (type pdf)
 
 <use ./images/plot_B2.pdf>
 Package pdftex.def Info: ./images/plot_B2.pdf used on input line 54.
-(pdftex.def)             Requested size: 119.34814pt x 187.55441pt.
+(pdftex.def)             Requested size: 151.55627pt x 238.15771pt.
 
-<./images/plot_B3.pdf, id=81, 486.3586pt x 386.93729pt>
+<./images/plot_B3.pdf, id=82, 486.3586pt x 386.93729pt>
 File: ./images/plot_B3.pdf Graphic file (type pdf)
 
 <use ./images/plot_B3.pdf>
 Package pdftex.def Info: ./images/plot_B3.pdf used on input line 56.
-(pdftex.def)             Requested size: 119.34813pt x 187.55217pt.
+(pdftex.def)             Requested size: 151.55624pt x 238.1569pt.
 
-Overfull \hbox (25.8858pt too wide) in paragraph at lines 52--58
+Overfull \hbox (30.50262pt too wide) in paragraph at lines 52--58
  [][][]  [][]  [][] 
  []
 
@@ -1578,22 +1578,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 70.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1122) has occurred while \output is active []
 
  [2 <./images/plot_B1.pdf> <./images/plot_B2.pdf> <./images/plot_B3.pdf>]
-<./images/plot_D0.pdf, id=132, 492.40453pt x 388.95251pt>
+<./images/plot_D0.pdf, id=138, 492.40453pt x 388.95251pt>
 File: ./images/plot_D0.pdf Graphic file (type pdf)
 
 <use ./images/plot_D0.pdf>
 Package pdftex.def Info: ./images/plot_D0.pdf used on input line 101.
-(pdftex.def)             Requested size: 289.85208pt x 228.96364pt.
+(pdftex.def)             Requested size: 368.05264pt x 290.74033pt.
 
-<./images/last_plot.pdf, id=133, 1081.03876pt x 542.025pt>
+<./images/last_plot.pdf, id=139, 1081.03876pt x 542.025pt>
 File: ./images/last_plot.pdf Graphic file (type pdf)
 
 <use ./images/last_plot.pdf>
 Package pdftex.def Info: ./images/last_plot.pdf used on input line 107.
-(pdftex.def)             Requested size: 323.93474pt x 221.64447pt.
+(pdftex.def)             Requested size: 411.34334pt x 281.45763pt.
+
+
+LaTeX Warning: Float too large for page by 26.69789pt on input line 112.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4793,7 +4796,6 @@ l.70 % Solving system of equations
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[4]
 
 ! LaTeX Error: Undefined color `OliveGreen'.
 
@@ -4950,6 +4952,7 @@ l.74 % Retriving first solution for each variable
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[4]
 
 ! LaTeX Error: Undefined color `OliveGreen'.
 
@@ -5886,9 +5889,9 @@ l.103 % Export graph in a pdf file
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) (./matlab_code/dx.m) (./matlab_code/dy.m) (./matlab_code/nx.m) [5]
-(./matlab_code/ny.m)) (./document.bbl [6] [7 <./images/plot_D0.pdf> <./images/l
-ast_plot.pdf>]) [8
+) (./matlab_code/dx.m) (./matlab_code/dy.m) (./matlab_code/nx.m)
+(./matlab_code/ny.m [5])) (./document.bbl [6] [7 <./images/plot_D0.pdf> <./imag
+es/last_plot.pdf>]) [8
 
 ]
 \tf@thm=\write5
@@ -5905,7 +5908,7 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 Here is how much of TeX's memory you used:
  16619 strings out of 493629
  238148 string characters out of 3143323
- 776983 words of memory out of 3000000
+ 789983 words of memory out of 3000000
  19394 multiletter control sequences out of 15000+200000
  51107 words of font info for 153 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
@@ -5923,10 +5926,10 @@ e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/
 1/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2011/te
 xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document.pdf (8 pages, 345524 bytes).
+Output written on document.pdf (8 pages, 345625 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
+ 413 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
  175 named destinations out of 1000 (max. 500000)
  12399 words of extra memory for PDF output out of 14400 (max. 10000000)
 
