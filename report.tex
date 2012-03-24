@@ -9,45 +9,43 @@ The model for a two protein network can be given by the system of equations:
 	\end{align}
 \end{subequations}
 where $x$ and $y$ are the concentration of the two proteins, $f$ and $g$ are
-``repression functions'' and $d_1 x$, $d_2 y$ are positive constant describing
+``repression functions'' and $d_1$, $d_2$ are positive constant describing
 the protein decay.
 
 \begin{subequations}
 	\begin{align}
-		f(y) &= \frac{k_1}{1+[Y]^n} \footnote{where n is greater than 1 due to
-	cooperativity}\\
-		g(x) &= \frac{k_2}{1+[X]^m} \footnote{where m is 
-		equal to 1 due to no cooperativity}
+		f(y) &= \frac{k_1}{1+[Y]^n} \\
+		g(x) &= \frac{k_2}{1+[X]} 
 	\end{align}
 \end{subequations}
 
- The level of repression of $[X]$ in a ``mixed'' circuit
-model is described by a Hill function, which models copperativity of binding between two
-different molecular species. Using the conditions for a change in the number of
-steady states derived from nullclines analysis:
+The level of repression of $[X]$ in a ``mixed'' circuit model is described by a
+Hill function~\citep{CHERRY2000117}, which models cooperativity of
+binding between two different molecular species. Cooperativity magnitude is described by the Hill coefficient
+$n$. Using the conditions for a change in the number of steady states derived
+from nullclines analysis:
 
 
 \begin{subequations}
 	\begin{align}
 		d_1 [X] &= \frac{k_1}{1+[Y]^n}*\frac{1}{d_1} = \frac{k'_1}{1+[Y]^n}
-		\footnote{with $k'_1 = \frac{k_1}{d_1}$} \label{eq:subeq1}\\ 
+		\label{eq:subeq1}\\ 
 		y_1 &= \sqrt[n]{\frac{k'_1}{d_1 [X]}-1}\\
-		d_2[Y] &= \frac{k_2}{1+[X]}*\frac{1}{d_2} = \frac{k'_2}{1+[X]^n}
-		\footnote{with $k'_2 = \frac{k_2}{d_2}$} \\
+		d_2[Y] &= \frac{k_2}{1+[X]}*\frac{1}{d_2} = \frac{k'_2}{1+[X]^n}\\
 		y_2 &= \frac{k'_2}{1+[X]} \label{eq:subeq2}
 	\end{align}
 \end{subequations}
+with $k'_1 = \frac{k_1}{d_1}$  and $k'_2 = \frac{k_2}{d_2}$.
 
 The equations \ref{eq:subeq1} and \ref{eq:subeq2} are solved as functions of
 $f(x)$ in the form $y = f(x)$.
 
 \section{Nullcline plots}
 The analysis performed in graphs \ref{fig:nullclinesplots} shows the existence
-of multiple steady states, which it is the necessary condition to have a switch.
-The purpose of the switch is to obtain a consisting change in the concentration
-of a certain protein. The graph \ref{fig:k24} shows highly transverse
-nullclines, the system can tolerate more movements of the nullclines without the
-disappearance of a steady state.
+of multiple steady states depending on which parameters are chosen. Multiple
+steady states are the necessary condition to have a switch. The purpose of the
+switch is to obtain a consisting change in the concentration of a certain
+protein. The graph \ref{fig:k24} shows  transverse nullclines.
 
 \begin{figure}[h!]
   \centering
@@ -94,7 +92,7 @@ we retrieve three solutions:
 	\end{align}
 \end{subequations}
 
-\section{Cooperativity plot}
+\section{Bifurcation diagram}
 
 
 \begin{figure}[h]
@@ -102,12 +100,43 @@ we retrieve three solutions:
     \includegraphics[width=0.85\textwidth]{plot_D0}
     \caption{Values of the parameter $k'_1$ and $k'_2$ needed for a working switch
  	for particular values of the exponent $n$ in the Hill function. }
+ \centering
+    \includegraphics[width=0.95\textwidth, height=0.65\textwidth]{last_plot}
+    \caption{Values of the parameter $k'_1$ and $k'_2$ needed for a working
+    switch
+for particular values of the exponent $n$ in the Hill function.}
 	\label{fig:bifurcatingplot}
 \end{figure}
 
+ 
+ 
+ In bifurcation diagram the region delimited by the graph is the bistable
+ region. Only in this region switches are possible. From this diagram one can
+ see clearly that $k'_2 = 2$ is completely outside the bistable region,
+ whereas $k'_2 = 4$ lies inside. This corresponds to the nullclines analyses in
+ plot \ref{fig:nullclinesplots}. There we could find a possible switch for $k'_2=4$ but not
+ for $k'_2 = 2$. Even though $k'_2 = 6$ seems to be in the bistable region here,
+ we can see from graph \ref{fig:k26} that there are no possible switches.
+
+\newpage
 
 
 
 
 
 
+\begin{section}{synthbio\_script\_01.m}
+\lstinputlisting[caption={./synthbio\_script\_01.m},label=lst:synth_bio_main-full]{./matlab_code/syntbio_script_01.m}
+\end{section}
+\begin{section}{dx.m}
+\lstinputlisting[caption={./dx.m},label=lst:synth_bio_dx-full]{./matlab_code/dx.m}
+\end{section}
+\begin{section}{dy.m}
+\lstinputlisting[caption={./dy.m},label=lst:synth_bio_dy-full]{./matlab_code/dy.m}
+\end{section}
+\begin{section}{nx.m}
+\lstinputlisting[caption={./nx.m},label=lst:synth_bio_nx-full]{./matlab_code/nx.m}
+\end{section}
+\begin{section}{ny.m}
+\lstinputlisting[caption={./ny.m},label=lst:synth_bio_ny-full]{./matlab_code/ny.m}
+\end{section}
