@@ -26,6 +26,7 @@ opt = odeset('AbsTol',1e-13, 'RelTol',1e-10)
 % integration
 [t,x] = ode45(@C1FFLand, tspan, x0, opt, t_Sx_ON, t_Sx_OFF);
 
+
 % plot results
 subplot(3,1,1)
 fig1 = stairs(t_sti, Sx_sti, 'r','linewidth',2)
@@ -51,4 +52,30 @@ grid on
 title('Z response')
 xlabel('t')
 ylabel('Z')
+
+
+print('-depsc2', 'plot_2B_I1FFL_09');
+
+
+% Data
+
+
+Z_peak = max(x(:,2));
+Z_1 = min(x(:,2));
+Z_2 = x(701,2);
+
+I_2 = 1;
+I_1 = 0;
+
+
+
+% Sensitivity
+
+sens = ((Z_peak - Z_1)/Z_1)/((I_2-I_1)/I_1);
+
+% Precision
+
+prec = sens^-1;
+
+
 
