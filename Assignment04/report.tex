@@ -1,0 +1,142 @@
+\newcommand{\package}{\emph}
+
+\setcounter{chapter}{1}
+\setcounter{section}{0}
+
+\setcounter{section}{0}
+\section{1}
+
+The steady state values $x_ss$ and $y_ss$ can be derived analytically by setting
+the differential equations $frac{dx}{dt}$ and $frac{dy}{dt}$ to zero. Thus 
+
+\begin{align} 
+\begin{equation}
+\label{eqn1}
+frac{dx}{dt} &= v_x (\alpha + frac{x^2}{K_M + x^2 + y^2}) - k_{D_x} x = 0
+\label{eqn1.1}\\
+frac{dy}{dt} &= v_y x - k_{D_y} y = 0 \label{eqn1.2}
+\end{equation}
+\end{align}
+
+\ref{eqn1.2} leads to 
+
+\begin{align} 
+\begin{equation}
+y &= frac{v_y x}{k_{D_y}}
+\end{equation}
+\end{align}
+
+which can be subsituted in \ref{eqn1.2}
+
+\begin{align} 
+\begin{equation}
+frac{dx}{dt} &= v_x (\alpha + frac{x^2}{K_M + x^2 + {frac{v_y x}{k_{D_y}}}^2})
+- k_{D_x} x = 0\\
+\end{equation}
+\end{align}
+
+Solving for x leads to
+
+ 
+\begin{align} 
+\begin{equation}
+\label{xss_no_param}
+x_ss = ((k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^2/(9 (k_{D_x} k_{D_y}^2
++ k_{D_x} v_y^2)^2) - (K_M k_{D_x} k_{D_y}^2)/(3 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)))/((((k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^3/(27 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^3) + (K_M a k_{D_y}^2 v_x)/(2 k_{D_x} k_{D_y}^2 + 2 k_{D_x} v_y^2) - (K_M k_{D_x} k_{D_y}^2 (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2))/(6 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2))^2 - ((k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^2/(9 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2) - (K_M k_{D_x} k_{D_y}^2)/(3 k_{D_x} k_{D_y}^2 + 3 k_{D_x} v_y^2))^3)^(1/2) + (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^3/(27 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^3) + (K_M a k_{D_y}^2 v_x)/(2 k_{D_x} k_{D_y}^2 + 2 k_{D_x} v_y^2) - (K_M k_{D_x} k_{D_y}^2 (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2))/(6 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2))^(1/3) + (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)/(3 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)) + ((((k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^3/(27 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^3) + (K_M a k_{D_y}^2 v_x)/(2 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)) - (K_M k_{D_x} k_{D_y}^2 (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2))/(6 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2))^2 - ((k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^2/(9 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2) - (K_M k_{D_x} k_{D_y}^2)/(3 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)))^3)^(1/2) + (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2)^3/(27 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^3) + (K_M a k_{D_y}^2 v_x)/(2 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)) - (K_M k_{D_x} k_{D_y}^2 (k_{D_y}^2 v_x + a k_{D_y}^2 v_x + a v_x v_y^2))/(6 (k_{D_x} k_{D_y}^2 + k_{D_x} v_y^2)^2))^{1/3}
+\end{equation}
+\end{align}
+  
+
+\section{2}
+\label{section_2}
+
+With the given parameters the equation \ref{xss_no_param} simplifies to
+
+\begin{align}
+\begin{equation}
+x_ss &= (10*a)/3 + ((160000*(a/40 + 1/400)^2)/9 - 1/27)/((10*a)/27 + (((10*a)/27
++ (64000000*(a/40 + 1/400)^3)/27 - 1/54)^2 - ((160000*(a/40 + 1/400)^2)/9 - 1/27)^3)^{1/2} + (64000000*(a/40 + 1/400)^3)/27 - 1/54)^{1/3} + ((10*a)/27 + (((10*a)/27 + (64000000*(a/40 + 1/400)^3)/27 - 1/54)^2 - ((160000*(a/40 + 1/400)^2)/9 - 1/27)^3)^{1/2} + (64000000*(a/40 + 1/400)^3)/27 - 1/54)^{1/3} + 1/3
+\end{equation}
+\end{align}
+
+which leads to the steady state pairs $x_{ss, 1} = 0.8727$, $y_{ss, 1} = 
+2.6180$ for $a = 0$ and $x_{ss, 2} = 1$, $y_{ss, 2} =  3$ for $a =
+\frac{1}{100}$.
+
+\section{3}
+\label{section_3}
+
+The Jacobian matrix is given by
+\begin{align}
+\begin{equation}
+\begin{bmatrix}
+
+v_x (\frac{2x}{x^2 + y^2 + K_M} - \frac{2 x^3}{x^2 + y^2 + K_M}^2) - k_{D_x} &
+{v_y}
+\\
+                                                           - k_{D_y} &  0 
+\end{bmatrix}
+\end{equation}
+\end{align}
+
+
+\section{4}
+
+The determinant and the trace of the Jacobian matrix for a) $\alpha = 0$ are
+given by
+
+\begin{align}
+\begin{equation}
+det(J_{\alpha = 0}) &= 0.0075 \\
+trace(J_{\alpha = 0}) &= 0.0825
+\end{equation}
+\end{align}
+
+and for b) $\alpha = \frac{1}{100}$ by
+
+\begin{align}
+\begin{equation}
+det(J_{\alpha = \frac{1}{100}}) &= 0.0075 \\
+trace(J_{\alpha = \frac{1}{100}}) &= 0.0638
+\end{equation}
+\end{align}
+
+As for both parameter values the determinants of the system are positive, the
+system is not stable for these parameter values.
+
+
+\section{5}
+
+The condition 
+
+\begin{align}
+\begin{equation}
+trace^2(J) < 4det(J)
+\end{equation}
+\end{align}
+
+needs to hold for oscillations to occur in a given system.
+Here, 
+
+\begin{align}
+\begin{equation}
+trace^2(J_{\alpha = 0}) = 0.0068 &< 0.0300 = 4det(J_{\alpha = 0})
+trace^2(J_{\alpha = \frac{1}{100}}) = 0.0041 &< 0.0300 = 4det(J_{\alpha =
+\frac{1}{100}})
+\end{equation}
+\end{align}
+
+thus with both values for parameter $\alpha$ the system may show oscillations.
+
+\section{5}
+
+  
+\newpage
+
+\setcounter{chapter}{2}
+\section* {Matlab Code Listings}
+\setcounter{section}{0}
+
+\begin{section}{main.m}
+\lstinputlisting[caption={./main.m},label=lst:main-full]{./matlab_code/main.m}
+\end{section}
